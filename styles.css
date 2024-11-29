@@ -1,93 +1,72 @@
-/* Fundamental CSS Concepts */
-
-/* Reset styles for a consistent look across browsers */
-* {
-  margin: 0; /* Removes default margins */
-  padding: 0; /* Removes default padding */
-  box-sizing: border-box; /* Includes padding and border in width/height */
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+  background-color: black;
+  padding: 10px;
+}
+header{
+  text-align: right;
+  background-color: crimson;
+  padding: 25px;
+}
+header h1{
+  font-size: xx-large;
+  margin-right: 3%;
+}
+header p{
+  font-size: smaller;
+  text-transform: uppercase;
+  color: bisque;
+  display: block;
 }
 
-/* Styling for the body (global styles) */
-body {
-  font-family: Arial, sans-serif; /* Sets the font style for text */
-  background-color: #f4f4f4; /* Light gray background color */
-  color: #333; /* Dark gray text color */
-  padding: 20px; /* Adds spacing around the body */
+img{
+  height: 150px;
+  width: 150px;
+  margin: 25px;
+  border-radius: 50%;
 }
-
-/* Header styles */
-header {
-  text-align: center; /* Centers text in the header */
-  background-color: #4caf50; /* Green background */
-  color: white; /* White text */
-  padding: 20px; /* Spacing inside the header */
+.Skills{
+  
 }
+.list{
+  list-style: square;
+  margin: 10px;
+  padding: 10px;
 
-header h1 {
-  margin-bottom: 10px; /* Adds spacing below the main heading */
 }
-
-/* Bio Section */
-.bio {
-  display: flex; /* Aligns content in a row */
-  align-items: center; /* Vertically centers items */
-  margin-top: 20px; /* Adds spacing above the section */
+.projects{
+  margin: 10px;
+  padding: 10px;
 }
-
-.bio img {
-  border-radius: 50%; /* Makes the image circular */
-  width: 100px; /* Sets image width */
-  height: 100px; /* Sets image height */
-  margin-right: 20px; /* Spacing to the right of the image */
+.projects a{
+  color: cadetblue;
+  text-decoration: none;
 }
-
-/* Skills Section */
-.skills {
-  margin-top: 20px; /* Adds spacing above the section */
+.projects a:hover{
+  color: red;
 }
-
-.skills ul {
-  list-style: none; /* Removes bullets from the list */
-  padding-left: 20px; /* Adds padding for indentation */
+footer{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: crimson;
 }
-
-.skills li {
-  margin-bottom: 5px; /* Adds spacing between list items */
-}
-
-/* Portfolio Section */
-.portfolio {
-  margin-top: 20px; /* Adds spacing above the section */
-}
-
-.portfolio a {
-  color: #4caf50; /* Green link color */
-  text-decoration: none; /* Removes underline from links */
-}
-
-.portfolio a:hover {
-  text-decoration: underline; /* Adds underline on hover */
-}
-
-/* Footer Section */
-footer {
-  text-align: center; /* Centers text in the footer */
-  margin-top: 40px; /* Adds spacing above the footer */
-}
-
-footer a {
-  color: #4caf50; /* Green link color */
-}
-
-/* Responsive Design */
-/* Adjust layout for screens smaller than 600px */
-@media (max-width: 600px) {
-  .bio {
-    flex-direction: column; /* Stacks items vertically */
-    align-items: flex-start; /* Aligns items to the left */
+@media(max-width:600px){
+  header h1{
+    font-size: smaller;
+    margin-right: 3%;
   }
-
-  .bio img {
-    margin-bottom: 10px; /* Adds spacing below the image */
+  header p{
+    font-size: smaller;
+    text-transform: uppercase;
+    color: bisque;
+    display: block;
   }
+  
+
 }

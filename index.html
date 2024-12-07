@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Montassar</title>
-  <link rel="stylesheet" href="styles.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Montassar Bousselmi</h1>
-    <p>Computer science student at the higher institute of mulimedia arts manouba</p>
-    
-
-  </header>
-  <main>
-    <section class="s1">
-      <p>Hello !!! I'm Montassar ......</p>
-      <img src="profile-pic.webp" alt="" >
-
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1 style="color: aliceblue;">Montassar Bousselmi</h1>
+        </div>
+        <div>
+            <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="profile.png" class="profilepic" alt="Profile Picture">
+        <p>Hello!! I'm Montassar Bousselmi a computer science student at ISAMM I've always been fascinated by the way technology can impact our daily lives, and I'm excited to pursue a career in software development.</p>
+        </div>
+        
     </section>
-    <section class="Skills">
-      <h2>My Skills :</h2>
-      <ul class="list">
-        <li><p>C/C++ Programming Language</p></li>
-        <li><p>Python Programming Language</p></li>
-        <li><p>HTML/CSS/JS </p></li>
-        <li><p>Problem Solving</p></li>
-      </ul>
-    </section>
-    <section class="projects">
-      <h2>Projects :</h2>
-      <a href="#" target="_blank">My First Project</a>
-    </section>
-    
-  </main>
-  <footer>
-    <p>Contact : <a href="mbousselmi024@gmail.com">mbousselmi024@gmail.com</a></p>
 
-  </footer>  
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="html.png" class="skill" alt="Project 1 Image">
+            </div>
+            <div class="project">
+                <img src="css.png" class="skill" alt="Project 1 Image">
+            </div>
+            <div class="project">
+                <img src="js.png" class="skill" alt="Project 1 Image">
+            </div>
+            <div class="project">
+                <img src="c++.png" class="skill" alt="Project 1 Image">
+            </div>
+            <div class="project">
+                <img src="python.png" class="skill" alt="Project 1 Image">
+            </div>
+            <div class="project">
+                <img src="c.png" class="skill" alt="Project 1 Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In touch Section -->
+    <section id="contact">
+        <h2 class="title">Get in Touch</h2>
+        <form class="contact-form">
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+          </div>
+          <div class="input-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="https://www.linkedin.com/in/montassar-bousselmi-3a1163319/"><img src="linkedin.png" class="link" alt=""></a>
+        <a href="mbousselmi024@gmail.com"><img src="gmail.png" class="link" alt=""></a>
+        
+        
+    </footer>
+
 </body>
 </html>

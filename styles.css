@@ -15,8 +15,10 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
-  display: flex;
+  display: block;
+  width: 100%;
   justify-content: space-between;
+  position: fixed;
 }
 
 header div{
